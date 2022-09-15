@@ -1,12 +1,15 @@
 body {
-    background-color: rgba(201, 204, 212, 0.658);
+    background-color: rgba(103, 104, 107, 0.658);
+    background-image: url(bg.png);
+    color: aliceblue;
 }
 main{
-    height: 2700px;
+    height: 700px;
 }
 .card-text {
-    color: gray;
+    color: rgb(252, 249, 249);
 }
 footer {
-    color: gray;
+    background-color: rgb(14, 10, 6);
+    color: rgb(252, 247, 247);
 }
