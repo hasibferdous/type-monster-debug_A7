@@ -1,6 +1,6 @@
 body {
     background-color: rgba(103, 104, 107, 0.658);
-    background-image: url(bg.png);
+    background-image: url("./bg.png");
     color: aliceblue;
 }
 main{
