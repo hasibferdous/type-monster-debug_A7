@@ -4,7 +4,7 @@ body {
     color: aliceblue;
 }
 main{
-    height: 1700px;
+    height: 2700px;
 }
 .card-text {
     color: rgb(252, 249, 249);
@@ -13,3 +13,4 @@ footer {
     background-color: rgb(14, 10, 6);
     color: rgb(252, 247, 247);
 }
+
