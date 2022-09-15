@@ -18,7 +18,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-white " id="navbarTogglerDemo01">
-            <a class="navbar-brand text-white" href=""><h2>Some Javascript question and Answers</h2></a>
+            <a class="navbar-brand text-white" href=""><h2>Some Javascript Questions and Answers</h2></a>
 
           </div>
         </div>
@@ -32,25 +32,13 @@
                 <div class="caption text-center mt-5 mb-5 pt-5">
                     <h1>Frequently Asked Questions</h1>
                 </div>
+               
                 <div class="faq accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      What are the difference among var, let and const ?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        a. var is function-scoped while let and const are block-scoped.<br>
-                        b. var variables can be reassigned while let and const variables can not.<br>
-                        c. var variables are declared using the var keyword while let and const variables are declared using the let and const keywords respectively.<br>
-                        d. const variables are immutable while let and var variables are not.</div>
-                  </div>
-                </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What are difference between Arrow Function and Regular Function ?
+                        What are difference between Local Storage and Session Storage ?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -59,42 +47,35 @@
                             <thead>
                               <tr><h4>Following are the main differences:</h4>
                                 <th scope="col">#</th>
-                                <th scope="col">Arrow Function</th>
+                                <th scope="col">Local Storage</th>
                                 <th scope="col">#</th>
-                                <th scope="col"> Regular Function</th>
+                                <th scope="col">Session Storage</th>
                               
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <th scope="row">1</th>
-                                <td>Curly brackets are not required if only one expression is present. If there’s only one argument, then the parentheses are not required either</td>
+                                <td>Local storage stores data with no expiration date.</td>
                                 <th scope="row">1</th>
-                                <td>Curly brackets are required even there only one expression is present</td>
+                                <td>Session storage is destroyed once the user closes the browser</td>
                                 
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
-                                <td>Arrow functions do not have arguments binding.</td>
+                                <td>Local Storage is persistant and remains intact across sessions unless anyone deletes it.</td>
                                 <th scope="row">2</th>
-                                <td>Regular functions have arguments binding.</td>
+                                <td>Session storage is temporary which exists as long as the current window is opened</td>
                                 
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
-                                <td>Unlike Regular functions, arrow function does not have their own "this" keyword.</td>
+                                <td>The data is send back to the server for every HTTP request (html,images,javascript,css,etc) reducing amount of trafic between client and server.</td>
                                 <th scope="row">3</th>
-                                <td>Regular functions have their own "this" keyword.</td>
+                                <td>Data is only available inside window/door in which it was set.</td>
                                 
                               </tr>
-                              <tr>
-                                <th scope="row">4</th>
-                                <td>The arrow functions are only callable and not constructible, i.e., arrow functions can never be used as constructor functions.</td>
-                                <th scope="row">4</th>
-                                <td> Regula
-                                r functions are constructible; they can be called using the new keyword.</td>
-                                
-                              </tr>
+
                             </tbody>
                           </table>
         
@@ -102,6 +83,90 @@
                   </div>
                 </div>
 
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          What are difference between Global Scope and Block Scope ?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <table class="table">
+                              <thead>
+                                <tr><h4>Following are the main differences:</h4>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Global Scope</th>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Block Scope</th>
+                                
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Global scope can be accessed globally in the entire program</td>
+                                  <th scope="row">1</th>
+                                  <td>Block scope restricts the variable that is declared inside a specific block, from access by the outside of the block.</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>The variables defined outside of any function or curly brackets are known as global variables and have global scope.</td>
+                                  <th scope="row">2</th>
+                                  <td>If you were to define some variables inside curly brackets {} or inside a specific function then those variables are called local variables</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.</td>
+                                  <th scope="row">3</th>
+                                  <td> The local variables have a very confined scope which is called the local scope But, with the release of ES6, the local scope was further broken down into two different scopes:
+
+                                    Function scope
+                                    Block scope.
+                                </td>
+                                  
+                                </tr>
+
+                              </tbody>
+                            </table>
+          
+                        </div>
+                    </div>
+                  </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How does the js event loop work ?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack.
+                         Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, 
+                         waits for the Call Stack to be clear again, and repeats the same process.
+                        </div>
+                        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How do I get undefined in Javascript ?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        A variable that has not been assigned a value is of type undefined . A method or statement also returns undefined if the variable 
+                        that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned . We will get undefined 
+                        value when you call a non-existent property or method of an object.
+                        In a JavaScript program, the correct way to check if an object property is undefined is to use the `typeof` operator.</div>
+                    
+                    
+                    
+                </div>
+                </div>
+                </div>
+                </div>
             </div>
         </section>
     </main>
